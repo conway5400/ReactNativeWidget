@@ -1,0 +1,33 @@
+{
+  "name": "mywidgets",
+  "widgetName": "MyWidgets",
+  "version": "1.0.0",
+  "description": "My widget description",
+  "copyright": "WRSTBND 2019",
+  "author": "Conway",
+  "config": {
+    "widgetPath": "../..//widgets",
+    "projectPath": "../..//"
+  },
+  "packagePath": "wrstbnd",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "pluggable-widgets-tools build:js:native",
+    "dev": "pluggable-widgets-tools start:js:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:js:native"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Conway/mywidgets/issues"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.0.4"
+  },
+  "dependencies": {
+    "big.js": "^5.2.2",
+    "react-native-track-player": "^1.1.8"
+  }
+}
